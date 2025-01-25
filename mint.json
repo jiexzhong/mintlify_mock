@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Artly Docs",
+  "name": "Artly Barista Bot",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@artly.coffee"
+      "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Barista Portal",
-    "url": "https://portal.artly.coffee"
+    "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
     {
@@ -34,18 +34,18 @@
   "anchors": [
     {
       "name": "Documentation",
-      "icon": "coffee",
-      "url": "https://docs.artly.coffee"
+      "icon": "book-open-cover",
+      "url": "https://mintlify.com/docs"
     },
     {
       "name": "Community",
-      "icon": "users",
-      "url": "https://community.artly.coffee"
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
     },
     {
-      "name": "Recipe Hub",
-      "icon": "book-open",
-      "url": "https://recipes.artly.coffee"
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
@@ -53,40 +53,39 @@
       "group": "Get Brewing",
       "pages": [
         "introduction",
-        "quick-setup",
-        "first-brew"
+        "quickstart",
+        "development"
       ]
     },
     {
-      "group": "Core Features",
+      "group": "Coffee Essentials",
       "pages": [
-        "features/bot-controls",
-        "features/recipe-management",
-        "features/maintenance",
-        "features/analytics"
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/reusable-snippets"
       ]
     },
     {
       "group": "API Documentation",
       "pages": [
-        "api-reference/overview",
-        "api-reference/authentication",
-        "api-reference/rate-limits"
+        "api-reference/introduction"
       ]
     },
     {
-      "group": "API Endpoints",
+      "group": "Barista Endpoints",
       "pages": [
-        "api-reference/orders/create",
-        "api-reference/orders/status",
-        "api-reference/recipes/custom",
-        "api-reference/maintenance/status"
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/artlycoffee",
-    "github": "https://github.com/artly",
-    "linkedin": "https://linkedin.com/company/artly"
+    "x": "https://x.com/mintlify",
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://linkedin.com/company/mintlify"
   }
 }
