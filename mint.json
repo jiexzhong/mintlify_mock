@@ -1,56 +1,92 @@
 {
-  "name": "Artly Documentation",
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Artly Docs",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
+  "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#8B4513",
-    "light": "#D2691E",
-    "dark": "#654321"
+    "primary": "#6F4E37",
+    "light": "#A67B5B",
+    "dark": "#483C32",
+    "anchors": {
+      "from": "#6F4E37",
+      "to": "#A67B5B"
+    }
   },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@artly.coffee"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Barista Portal",
+    "url": "https://portal.artly.coffee"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "coffee",
+      "url": "https://docs.artly.coffee"
+    },
+    {
+      "name": "Community",
+      "icon": "users",
+      "url": "https://community.artly.coffee"
+    },
+    {
+      "name": "Recipe Hub",
+      "icon": "book-open",
+      "url": "https://recipes.artly.coffee"
+    }
+  ],
   "navigation": [
     {
-      "group": "Getting Started",
+      "group": "Get Brewing",
       "pages": [
-        "quickstart",
-        "installation",
-        "authentication"
+        "introduction",
+        "quick-setup",
+        "first-brew"
       ]
     },
     {
-      "group": "Barista Bot API",
+      "group": "Core Features",
       "pages": [
-        "api-reference/orders",
-        "api-reference/recipes",
-        "api-reference/maintenance"
+        "features/bot-controls",
+        "features/recipe-management",
+        "features/maintenance",
+        "features/analytics"
       ]
     },
     {
-      "group": "Hardware Integration",
+      "group": "API Documentation",
       "pages": [
-        "hardware/setup",
-        "hardware/calibration",
-        "hardware/troubleshooting"
+        "api-reference/overview",
+        "api-reference/authentication",
+        "api-reference/rate-limits"
       ]
     },
     {
-      "group": "Recipes & Customization",
+      "group": "API Endpoints",
       "pages": [
-        "recipes/custom-drinks",
-        "recipes/parameters",
-        "recipes/validation"
+        "api-reference/orders/create",
+        "api-reference/orders/status",
+        "api-reference/recipes/custom",
+        "api-reference/maintenance/status"
       ]
     }
   ],
-  "api": {
-    "baseUrl": "https://api.artly.coffee",
-    "auth": {
-      "method": "bearer"
-    }
-  },
   "footerSocials": {
+    "twitter": "https://twitter.com/artlycoffee",
     "github": "https://github.com/artly",
-    "discord": "https://discord.gg/artly"
+    "linkedin": "https://linkedin.com/company/artly"
   }
 }
