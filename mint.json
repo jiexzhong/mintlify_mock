@@ -1,91 +1,56 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Artly Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
-  "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#967259",
-    "light": "#ECE0D1",
-    "dark": "#38220f",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
+    "primary": "#8B4513",
+    "light": "#D2691E",
+    "dark": "#654321"
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
         "quickstart",
-        "development"
+        "installation",
+        "authentication"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Barista Bot API",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "api-reference/orders",
+        "api-reference/recipes",
+        "api-reference/maintenance"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Hardware Integration",
       "pages": [
-        "api-reference/introduction"
+        "hardware/setup",
+        "hardware/calibration",
+        "hardware/troubleshooting"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Recipes & Customization",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "recipes/custom-drinks",
+        "recipes/parameters",
+        "recipes/validation"
       ]
     }
   ],
+  "api": {
+    "baseUrl": "https://api.artly.coffee",
+    "auth": {
+      "method": "bearer"
+    }
+  },
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "github": "https://github.com/artly",
+    "discord": "https://discord.gg/artly"
   }
 }
