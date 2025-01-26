@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Artly Barista Bot",
   "logo": {
-    "dark": "/logo/artly-logo.png",
-    "light": "/logo/artly-logo.png"
+    "dark": "/logo/artly-large.png",
+    "light": "/logo/artly-large.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
