@@ -64,6 +64,12 @@
       ]
     },
     {
+      "group": "Resources",
+      "pages": [
+        "pricing"
+      ]
+    },
+    {
       "group": "Coffee Essentials",
       "pages": [
         "essentials/markdown",
